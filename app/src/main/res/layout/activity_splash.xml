@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机卫士"
+        android:textSize="40sp"
+        android:textColor="#08e416"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_appname" />
+
+    <!-- 进度条 -->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <!-- 版本号 -->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本号：1.0"
+        android:textSize="20sp"
+        android:textColor="#e40c08"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowColor="#f7bb43"
+        android:shadowRadius="2"
+        android:layout_above="@+id/ll_bottom_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- 底部图标 -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/splash_icon_sides"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/splash_icon_center"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/splash_icon_sides"/>
+    </LinearLayout>
+</RelativeLayout>

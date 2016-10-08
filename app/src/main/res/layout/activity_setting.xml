@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holy="http://schemas.android.com/apk/res/com.holy.mobilesecurity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <!-- 标题 -->
+    <TextView
+        style="@style/TitleTheme"
+        android:text="设置中心"/>
+
+    <com.holy.mobilesecurity.view.SettingItemView
+        android:id="@+id/siv_isUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        holy:Title="自动更新设置"
+        holy:Desc_on="自动更新已开启"
+        holy:Desc_off="自动更新已关闭">
+    </com.holy.mobilesecurity.view.SettingItemView>
+
+    <com.holy.mobilesecurity.view.SettingItemView
+        android:id="@+id/siv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        holy:Title="电话归属地显示"
+        holy:Desc_on="归属地显示已开启"
+        holy:Desc_off="归属地显示已关闭">
+    </com.holy.mobilesecurity.view.SettingItemView>
+</LinearLayout>
